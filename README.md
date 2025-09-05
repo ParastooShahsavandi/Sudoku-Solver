@@ -1,19 +1,25 @@
-# Sudoku Solver
+# Sudoku Solver (Simulated Annealing + Backtracking)
 
-This project implements a **Sudoku Solver** using two different approaches:
-1. **Simulated Annealing** – a probabilistic optimization algorithm.
-2. **Backtracking** – a classic recursive search algorithm.
+A 9x9 Sudoku solver that first tries **Simulated Annealing (SA)** for a fast heuristic solution and automatically falls back to **Backtracking** for a guaranteed solution.
 
----
-
-## 🔹 Features
-- Solves Sudoku puzzles using **metaheuristics (Simulated Annealing)**.
-- Falls back to **Backtracking** if no solution is found.
-- Prints intermediate results during simulated annealing to show progress.
-- Works on standard **9x9 Sudoku puzzles**.
+> 🎯 Goal: combine a metaheuristic approach (SA) with an exact search (Backtracking) and compare their behavior.
 
 ---
 
-## 🔹 Example
+## ✨ Features
+- **Two solvers**: Simulated Annealing (probabilistic) + Backtracking (exact).
+- **Progress logs** during SA (iteration, cost, temperature).
+- Works on standard **9×9** Sudoku puzzles.
+- Pure Python, **no external dependencies**.
+
+---
+
+## 📦 Requirements
+- Python ≥ 3.8  
+(uses only the standard library: `random`, `math`)
+
+---
+
+## 🚀 How to Run
 ```bash
 python sudoku_solver.py
